@@ -1,4 +1,5 @@
 console.log('Task-01');
+console.log('-------');
 
 const user = {
   name: 'Mango',
