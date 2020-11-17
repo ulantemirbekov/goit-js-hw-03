@@ -1,6 +1,3 @@
-console.log('Task-06');
-console.log('-------');
-
 const products = [
   { name: 'Радар', price: 1300, quantity: 4 },
   { name: 'Сканер', price: 2700, quantity: 3 },
@@ -12,23 +9,9 @@ const calculateTotalPrice = function (allProducts, productName) {
     
     for (const product of allProducts) { 
         
-        for (const name in product) {
-            
-            if (product.name === productName) {
+        if (product.name === productName) {
                 
                 return product.price * product.quantity;
-            }            
-        }
+            }
     }
 };
-
-// Вызовы функции для проверки работоспособности твоей реализации.
-
-console.log(calculateTotalPrice(products, 'Радар')); // 5200
-
-console.log(calculateTotalPrice(products, 'Дроид')); // 2800
-
-
-// Напиши функцию calculateTotalPrice(allProdcuts, productName),
-// которая получает массив объектов и имя продукта(значение свойства name).
-// Возвращает общую стоимость продукта(цена * количество).
